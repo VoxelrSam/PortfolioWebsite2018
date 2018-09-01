@@ -40,7 +40,6 @@ p {
 .content {
     display: table;
 	width: 100%;
-	margin-top: 70px;
     font-size: 0;
     overflow: hidden;
 }
@@ -116,9 +115,54 @@ p {
 
 /* ID's */
 
+#background-video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: fixed;
+    z-index: -1;
+}
+
+#landing {
+    position: relative;
+    min-height: 800px;
+    height: 100%;
+    width: 100%;
+}
+
+#landing-introduction {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    font-size: 100px;
+    color: #00faab;
+}
+
+#landing-description {
+    color: #0072ff;
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    font-size: 100px;
+}
+
+#landing-scroll-indicator {
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 22px);
+    font-size: 50px;
+    color: rgba(0, 0, 0, .3);
+}
+
 #about-content {
+    min-height: 1000px;
     color: white;
     box-shadow: -3px 0px 20px black;
+}
+
+#projects {
+    background: rgba(255, 255, 255, .9);
 }
 
 #loading-cover{

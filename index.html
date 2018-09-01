@@ -20,38 +20,32 @@
 	
 	<div id="loading-cover">
 		<div id="inner-loading">
-			<h2 id=javascriptNotice>Please enable Javascript to utilize this web page</h2>
+			<h2 id="javascriptNotice">Please enable Javascript to utilize this web page</h2>
 			
 			<center><img src='photos/preloader.gif'/></center>
 		</div>
 	</div>
 	
 	<div id=body>
-	
-		<div id=headerContainer>
-			<div id=header>
-				<h1>Samuel Ingram</h1>
-				
-				<ul id=nav>
-					<li onclick='changePage("home")'><a>Home</a></li>
-					<li onclick='changePage("about")'><a>About</a></li>
-					<li onclick='changePage("projects")'><a>Experiences</a></li>
-					<li onclick='changePage("contact")'><a>Contact</a></li>
-				</ul>
-			</div>
-		</div>
+        <video id="background-video" loop autoplay muted>
+            <source src="videos/background.mp4" type="video/mp4">
+        </video>
 
-        <video width="1920" height="1080" autoplay loop src="videos/background.mpeg"></video>
+        <div id="landing" class="content">
+            <h1 id="landing-introduction"></h1>
+            <h1 id="landing-description"></h1>
+            <div id="landing-scroll-indicator">⯆</div>
+        </div>
 		
 		<div id="about" class="content">
 
-            <div class="left-content fixed-frame" style="background: url(photos/about.jpg) no-repeat fixed center; background-size: cover;">
+            <div class="left-content fixed-frame" style="background: url(photos/about.jpg) no-repeat fixed left center; background-size: 51% auto;">
             </div>
 
             <div id="about-content" class="right-content fixed-frame" style="background: url(photos/overlay.jpg) no-repeat fixed center; background-size: cover;">
                 <h1>About Me</h1>
 
-                <div class=text>
+                <div class="text">
 
                     <p>
                         My name is Samuel Ingram, or Sam as most people call me, and I am a junior at Purdue University working towards a bachelors of science in computer science honors. I absolutely love technology and music. Both fascinate me, and I always enjoy learning more about each subject.
@@ -70,9 +64,9 @@
 
                 <h1>My Start in Technology</h1>
 
-                <div class=tech>
+                <div class="tech">
 
-                    <div class=text>
+                    <div class="text">
                         <p>
                             To most people building a computer may sound like a drag, but to me building a computer sounds like a fun way to spend my afternoon. I never realized just how much fun I could have with technology until I received my laptop for one of my birthdays. From the moment that that laptop was in my possession, I gained a whole new world of technological possibilities and fun through PC games and the many other applications possible through a PC. It was not long after receiving my laptop that I built a desktop computer for gaming and general media production. My computer has served me well through the games offered and through the fun that I had building it. I knew then that computers were devices that I could have a plethora of fun with, and I knew that I wanted to go into the tech industry as a future job.
                         </p>
@@ -88,17 +82,17 @@
             </div>
 		</div>
 		
-		<div id=projects class=content>
+		<div id="projects" class="content">
 		
-			<div class=center>
+			<div class="center">
 			
-				<div id=boilermake>
+				<div id="boilermake">
 						
-					<h1 class=header>BoilerMake V</h1>
+					<h1 class="header">BoilerMake V</h1>
 					
 					<img class="banner" src="photos/boilermake.jpg"/>
 					
-					<div class=subtext>
+					<div class="subtext">
                         <p>
                             As a child, I loved video games and always dreamed of the day that I could call myself a game developer. BoilerMake V led to a realization of that dream in a way that I never would have imagined. My team and I constructed a game within thirty six hours and managed to take first place on the home turf of Purdue University at BoilerMake V.
                         </p>
@@ -119,9 +113,9 @@
                         </p>
 					</div>
 					
-					<h1 class=subheader>Parks and Wreck</h1>
+					<h1 class="subheader">Parks and Wreck</h1>
 					<br/>
-					<center><a href="https://github.com/RyanNavillus/ParksAndWreck" target="_blank"><img src="photos/ParksAndWreck.png"/ width="800px"/></a></center>
+					<center><a href="https://github.com/RyanNavillus/ParksAndWreck" target="_blank"><img src="photos/ParksAndWreck.png" width="800px"/></a></center>
 					
 					<br/>
 					<br/>
@@ -129,15 +123,15 @@
 			</div>
 			<br/>
 		
-			<div class=center>
+			<div class="center">
 			
-				<div id=qualcomm>
+				<div id="qualcomm">
 						
-					<h1 class=header>Qualcomm</h1>
+					<h1 class="header">Qualcomm</h1>
 					
 					<img class="banner" src="photos/qualcomm.jpg"/>
 					
-					<div class=subtext>
+					<div class="subtext">
                         <p>
                             In the summer of 2017, I had the amazing opportunity to take part in Qualcomm’s summer intern program. I gained a ton of experience through it and really learned a lot about what exactly computer science entails outside of school. While working at Qualcomm I had the opportunity to actually apply my knowledge in a work environment, and that really helped solidify my passion for computer science.
                         </p>
@@ -163,25 +157,25 @@
 			</div>
 			<br/>
 			
-			<div id=cloud>
+			<div id="cloud">
 			
-				<div id=cloudbuffer>
+				<div id="cloudbuffer">
 					<img src="photos/cloud2.svg"/>
 				</div>
 				
 				<div id="HWContent">
-					<center><a href=http://helloworld.purduehackers.com/ target=_blank><img id=HWLogo src="photos/HWLogo.png"/></a></center>
+					<center><a href="http://helloworld.purduehackers.com/" target="_blank"><img id="HWLogo" src="photos/HWLogo.png"/></a></center>
 					<br/>
 					<br/>
 				
-					<div class=center>
-						<h1 class=header>Hello World</h1>
+					<div class="center">
+						<h1 class="header">Hello World</h1>
 						
-						<img class="banner" src="photos/helloworld.jpg"/>
+						<img class="banner" src="photos/helloworld.jpg" />
 						
-						<h1 class=subheader>The Story</h1>
+						<h1 class="subheader">The Story</h1>
 						
-						<div class=subtext>
+						<div class="subtext">
 							<p>
 								Before coming to Purdue the concept of a hackathon was a daunting one to me, but little did I know that attending one would be one of the best programming experiences I would ever have. I mean, I had worked with other people before and was comfortable with what I knew, but coming up with an idea and successfully hashing it out in a little amount of time with people that I was unfamiliar with sounded a bit crazy to me. Nevertheless I was determined to sign up and make the most of this new experience. 
 							</p>
@@ -193,7 +187,7 @@
 							<br/>
 							
 							<p>
-								The beginning was slow with us throwing ideas back and forth. We tried to find something fun, but at the same time difficult enough for us to be able to learn something. We had come up with a few good ideas, but we eventually settled on the idea of making a program inspired by <a href=https://bitstorm.org/gameoflife/ target=_blank>Conway’s Game of Life</a>. We wanted to stick to rules similar to the original, but with one major spin; we wanted to make the game board use hexagons instead of the usual squares. 
+								The beginning was slow with us throwing ideas back and forth. We tried to find something fun, but at the same time difficult enough for us to be able to learn something. We had come up with a few good ideas, but we eventually settled on the idea of making a program inspired by <a href="https://bitstorm.org/gameoflife/" target="_blank">Conway’s Game of Life</a>. We wanted to stick to rules similar to the original, but with one major spin; we wanted to make the game board use hexagons instead of the usual squares.
 							</p>
 							<br/>
 							
@@ -213,13 +207,13 @@
 							<br/>
 						</div>
 						
-						<h1 class=subheader>The Project</h1>
+						<h1 class="subheader">The Project</h1>
 						
-						<center><a href=https://arunarjunakani.github.io/HexagonalGameOfLife/ target=_blank><img id=hexagonGif src="photos/hexagon.gif"/></a></center>
+						<center><a href="https://arunarjunakani.github.io/HexagonalGameOfLife/" target="_blank"><img id="hexagonGif" src="photos/hexagon.gif"/></a></center>
 						
-						<div class=subtext>
+						<div class="subtext">
 							<p>
-								The project that we made was a web application based off of <a href=https://bitstorm.org/gameoflife/ target=_blank>Conway's Game of Life</a> that uses hexagons rather than squares. Feel free to check out <a href=https://github.com/arunarjunakani/HexagonalGameOfLife target=_blank>the Github repository</a> or <a href=https://arunarjunakani.github.io/HexagonalGameOfLife/ target=_blank>the final product</a>. Mess around with different patterns and just see what happens!
+								The project that we made was a web application based off of <a href="https://bitstorm.org/gameoflife/" target="_blank">Conway's Game of Life</a> that uses hexagons rather than squares. Feel free to check out <a href="https://github.com/arunarjunakani/HexagonalGameOfLife" target="_blank">the Github repository</a> or <a href="https://arunarjunakani.github.io/HexagonalGameOfLife/" target="_blank">the final product</a>. Mess around with different patterns and just see what happens!
 							</p>
 						</div>
 					</div>
@@ -227,23 +221,23 @@
 			</div>
 		</div>
 		
-		<div id=contact class=content>
-			<div class=center>
+		<div id="contact" class="content">
+			<div class="center">
 			
-				<h1 class=header>Contact Me!</h1>
+				<h1 class="header">Contact Me!</h1>
 			
-				<div class=text>
+				<div class="text">
 					<p>Have any questions, comments, concerns, or just constructive criticism? Send an email to</p>
-					<center><a style=text-decoration:none; href="mailto:sam@samingram.me"><h2 class=email>sam@samingram.me</h2></a></center>
+					<center><a style=text-decoration:none; href="mailto:sam@samingram.me"><h2 class="email">sam@samingram.me</h2></a></center>
 					<p>or direct school related emails to</p>
-					<center><a style=text-decoration:none; href="mailto:ingram23@purdue.edu"><h2 class=email>ingram23@purdue.edu</h2></a></center>
+					<center><a style=text-decoration:none; href="mailto:ingram23@purdue.edu"><h2 class="email">ingram23@purdue.edu</h2></a></center>
 					<p>I'll be sure to get back with you quickly!</p>
 					<br/>
 					
-					<p>Considering me for a job or internship? <a target=_blank href="files/Samuel Ingram Resume.pdf">Download my resume here</a>. I would love to hear back!</p>
+					<p>Considering me for a job or internship? <a target="_blank" href="files/Samuel Ingram Resume.pdf">Download my resume here</a>. I would love to hear back!</p>
 					<br/>
 					
-					<p>Also, feel free to check out my <a target=_blank href="https://github.com/VoxelrSam">Github</a> or my <a href=https://www.linkedin.com/in/samuel-ingram-4571a0127 target=_blank>LinkedIn Profile</a>.</p>
+					<p>Also, feel free to check out my <a target="_blank" href="https://github.com/VoxelrSam">Github</a> or my <a href="https://www.linkedin.com/in/samuel-ingram-4571a0127" target="_blank">LinkedIn Profile</a>.</p>
 				</div>
 				<br/>
 			
