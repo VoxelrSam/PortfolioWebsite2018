@@ -113,6 +113,50 @@ p {
 	margin-bottom:10px;
 }
 
+.experiences-table-row {
+    width: 100%;
+}
+
+.experiences-tile {
+    width: calc(50% - 1px);
+    display: inline-block;
+    height: 500px;
+    border-bottom: 2px solid white;
+}
+
+.experiences-tile:first-child {
+    border-right: 1px solid white;
+}
+
+.experiences-tile:last-child {
+    border-left: 1px solid white;
+}
+
+.experiences-table-row:last-child .experiences-tile{
+    border-bottom: none;
+}
+
+.tile-overlay {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s;
+    background: rgba(0, 0, 0, .4);
+}
+
+.tile-overlay:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.tile-overlay-content {
+    padding: 15px 20px 15px 20px;
+}
+
+.experiences-content {
+    width: 100%;
+}
+
 /* ID's */
 
 #background-video {
@@ -161,8 +205,12 @@ p {
     box-shadow: -3px 0px 20px black;
 }
 
+#experiences-table {
+    width: 100%;
+}
+
 #projects {
-    background: rgba(255, 255, 255, .9);
+    background: rgba(255, 255, 255, .7);
 }
 
 #loading-cover{
