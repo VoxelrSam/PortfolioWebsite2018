@@ -1,5 +1,8 @@
-var currentPage = "home";   // Global variable declared for the nav function to keep track of current page
-var lastPage = "home";
+/**
+ *
+ */
+
+let expandedExperience;
 
 $(document).ready(function(){
 	// removes javascript notice
@@ -8,51 +11,31 @@ $(document).ready(function(){
 	setCss();
 });
 
-//sets css to accommodate for different resolutions and such
+// sets css to accommodate for different resolutions and such
 function setCss(){
 	// margin left (used for horizontal alignment) is calculated based on width of the element
 	$('#inner-loading').css('margin-left',"-" + $('#inner-loading').width() / 2 + "px");
-	
-	// checks to determine if the ratio of the window is greater than the background. if it is, the css height and width properties need to be switched. in short: keeps the background fullscreen and centered.
-	setInterval(function(){
-		if (window.innerHeight / window.innerWidth > $('#background').height() / $('#background').width()){
-		
-			$('#background, #backgroundOverlay').css({
-				"width": "auto",
-				"height": "105%"
-			});
-		} else {
-			$('#background, #backgroundOverlay').css({
-				"width": "105%",
-				"height": "auto"
-			});
-		}
-		
-		$('#background, #backgroundOverlay').css("margin-left", "-" + ($('#background').width() / 2).toString() + "px");
-		
-		$('#HWContent').css("margin-top", ($('#cloudbuffer').height()/1.5 * -1) + "px");
-	}, 1);
 }
 
-// Removes the loading screen when the website has loaded
+// Removes the loading screen when the website has loaded and starts animations
 function loaded () {
-	// bounces screen out of view
+	// Bounces loading screen out of view
 	$('#loading-cover').addClass("animated bounceOutUp");
 	
-	// animates in the header and footer after the loading screen has finished bouncing out
-	$('#loading-cover').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-        typeText("landing-introduction", "Hi, I'm Sam", function () {
+	// Starts the animations after the loading screen is gone
+	$('#loading-cover').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', () => {
+        typeText("landing-introduction", "Hi, I'm Sam", () => {
             setTimeout(() => {
                 typeText("landing-description", "I'm a ", startDescriptionSwap);
             }, 500);
         });
 
-        $("#landing-scroll-indicator").addClass("animated bounce").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+        $("#landing-scroll-indicator").addClass("animated bounce").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', () => {
             $("#landing-scroll-indicator").removeClass("animated bounce");
         });
 
         setInterval(() => {
-            $("#landing-scroll-indicator").addClass("animated bounce").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            $("#landing-scroll-indicator").addClass("animated bounce").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', () => {
                 $("#landing-scroll-indicator").removeClass("animated bounce");
             });
         }, 3000);
@@ -116,4 +99,18 @@ function startDescriptionSwap () {
             }, 250);
         });
     }, 3000);
+}
+
+function expandContent (name) {
+    const element = document.getElementById("experiences-" + name);
+
+    if (expandedExperience)
+        document.getElementById("experiences-" + expandedExperience).style.height = "0px";
+
+    if (expandedExperience !== name) {
+        element.style.height = element.scrollHeight + "px";
+        expandedExperience = name;
+    } else {
+        expandedExperience = undefined;
+    }
 }

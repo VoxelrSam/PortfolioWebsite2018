@@ -154,7 +154,10 @@ p {
 }
 
 .experiences-content {
+    height: 0px;
     width: 100%;
+    overflow: hidden;
+    transition: .5s height;
 }
 
 /* ID's */
@@ -207,10 +210,6 @@ p {
 
 #experiences-table {
     width: 100%;
-}
-
-#projects {
-    background: rgba(255, 255, 255, .7);
 }
 
 #loading-cover{
@@ -298,13 +297,11 @@ p {
 }
 
 #hexagonGif {
-	margin-top:50px;
-	margin-bottom:25px;
-	width:500px;
+	width: 500px;
 }
 
 #HWContent{
-	background:#52bfa8;
+	background:rgba(82, 191, 168, .9);
 	padding-bottom:50px;
 }
 

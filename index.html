@@ -87,7 +87,7 @@
             <div id="experiences-table">
                 <div class="experiences-table-row">
                     <div class="experiences-tile" style="background: url(photos/salesforce.jpg) no-repeat center; background-size: cover;">
-                        <div class="tile-overlay">
+                        <div class="tile-overlay" onclick="expandContent('salesforce')">
                             <div class="tile-overlay-content">
                                 <h1>Salesforce</h1>
                             </div>
@@ -95,7 +95,7 @@
                     </div>
 
                     <div class="experiences-tile" style="background: url(photos/boilermake.jpg) no-repeat center; background-size: cover;">
-                        <div class="tile-overlay">
+                        <div class="tile-overlay" onclick="expandContent('boilermake')">
                             <div class="tile-overlay-content">
                                 <h1>Boilermake V</h1>
                             </div>
@@ -103,7 +103,40 @@
                     </div>
                 </div>
 
-                <div class="experiences-content">
+                <div id="experiences-salesforce" class="experiences-content">
+                    <div class="center">
+
+                        <div id="salesforce">
+
+                            <h1 class="header">BoilerMake V</h1>
+
+                            <center><a href="https://github.com/RyanNavillus/ParksAndWreck" target="_blank"><img src="photos/ParksAndWreck.png" width="800px"/></a></center>
+
+                            <div class="subtext">
+                                <p>
+                                    As a child, I loved video games and always dreamed of the day that I could call myself a game developer. BoilerMake V led to a realization of that dream in a way that I never would have imagined. My team and I constructed a game within thirty six hours and managed to take first place on the home turf of Purdue University at BoilerMake V.
+                                </p>
+                                <br/>
+
+                                <p>
+                                    The idea started off simple; why not just make something fun that we are passionate about rather than trying to go overboard and end up with a half baked idea? This led us to decide to make a video game. The concept that we came up with was that a player and his other three friends are all car valets. The objective of the game was for the player to park more cars than his friends while everyone sped around the parking lot and crashed into one another. The gameplay concept was meant to be fun and fast paced, and it turned out to be exactly that! Through some trial and error, we were able to put together the base game with some time to spare, so we went through and playtested everything and added features to really polish the game beyond its base layer.
+                                </p>
+                                <br/>
+
+                                <p>
+                                    A lot of pieces went into putting the game together, but in its simplest form, the game was built with Java using both LWJGL and dyn4j as the base layer game engine platforms. For my part, I worked mainly with the graphics of the game and also put together some of the logic behind the game objects and their interactions. Throughout the course of the hackathon, I mainly worked in tandem with one of the other teammates who had worked with a lot of graphics while the other two teammates worked on the lower level aspects such as physics and integrating controller support. Though there were a few headaches along the way, we managed to put together a project that were really proud of within the time given.
+                                </p>
+                                <br/>
+
+                                <p>
+                                    By the end of the hackathon, my team knew we put something truly special together, but I do not think any of us were expecting to take home first place in the competition. Despite the expectations, we were called to present on stage with two other teams and were declared to be the first place recipients shortly after. This whole event was really special to me and my team, and I am truly grateful to the Purdue Hackers for deeming our project so special. I am proud of what we managed to accomplish, and I look forward to what BoilerMake VI has in store for us in the future. While my interest in Computer Science has expanded beyond just game development, BoilerMake V was the realization to my childhood dream of creating a fun game in a rather unexpected and special way.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="experiences-boilermake" class="experiences-content">
                     <div class="center">
 
                         <div id="boilermake">
@@ -138,7 +171,7 @@
 
                 <div class="experiences-table-row">
                     <div class="experiences-tile" style="background: url(photos/qualcomm.jpg) no-repeat center; background-size: cover;">
-                        <div class="tile-overlay">
+                        <div class="tile-overlay" onclick="expandContent('qualcomm')">
                             <div class="tile-overlay-content">
                                 <h1>Qualcomm</h1>
                             </div>
@@ -146,7 +179,7 @@
                     </div>
 
                     <div class="experiences-tile" style="background: url(photos/helloworld.jpg) no-repeat center; background-size: cover;">
-                        <div class="tile-overlay">
+                        <div class="tile-overlay" onclick="expandContent('helloworld')">
                             <div class="tile-overlay-content">
                                 <h1>Hello World</h1>
                             </div>
@@ -154,9 +187,94 @@
                     </div>
                 </div>
 
+                <div id="experiences-qualcomm" class="experiences-content">
+                    <div class="center">
+
+                        <div id="qualcomm">
+
+                            <h1 class="header">Qualcomm</h1>
+
+                            <div class="subtext">
+                                <p>
+                                    In the summer of 2017, I had the amazing opportunity to take part in Qualcomm’s summer intern program. I gained a ton of experience through it and really learned a lot about what exactly computer science entails outside of school. While working at Qualcomm I had the opportunity to actually apply my knowledge in a work environment, and that really helped solidify my passion for computer science.
+                                </p>
+                                <br/>
+
+                                <p>
+                                    Along the way I got to work with some great people and make some amazing friends. I worked directly with another intern, Kevin, on the same project, and I worked indirectly with five other interns who were also on the team. During the project Kevin and I mainly consulted with three other full time Qualcomm engineers to get a grasp on the existing code and what our project should exactly entail.
+                                </p>
+                                <br/>
+
+                                <p>
+                                    The project that Kevin and I worked on mainly consisted of a front end web interface for a server that controlled SIM card profiles. The project was an internal tool, but the Qualcomm engineers made sure to stress just how important this project would be for them to be able to test and debug various issues that come up. The front end was programmed using HTML, CSS, and Javascript, and we utilized Bootstrap for a lot of the layout and design work. The backend consisted of a lot of pre-existing Java code, but we had to add a lot to it to provide the various functions that we wanted to be run from the interface. By the end I was incredibly proud of what we put together and what we had accomplished in three months.
+                                </p>
+                                <br/>
+
+                                <p>
+                                    My experience as an intern at Qualcomm is one that I will never forget. I am incredibly grateful for the opportunity Qualcomm gave me to work with them, and I look forward to seeing what possibilities await me in the future!
+                                </p>
+                                <br/>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="experiences-helloworld" class="experiences-content">
+                    <div id="HWContent">
+                        <center><a href="http://helloworld.purduehackers.com/" target="_blank"><img id="HWLogo" src="photos/HWLogo.png"/></a></center>
+                        <br/>
+                        <br/>
+
+                        <div class="center">
+                            <h1 class="header">Hello World</h1>
+
+                            <div class="subtext">
+                                <p>
+                                    Before coming to Purdue the concept of a hackathon was a daunting one to me, but little did I know that attending one would be one of the best programming experiences I would ever have. I mean, I had worked with other people before and was comfortable with what I knew, but coming up with an idea and successfully hashing it out in a little amount of time with people that I was unfamiliar with sounded a bit crazy to me. Nevertheless I was determined to sign up and make the most of this new experience.
+                                </p>
+                                <br/>
+
+                                <p>
+                                    Once I had arrived to the opening ceremony, I sat around for a while surveying the room and looking for anyone that looked even vaguely familiar that I could team up with. Before long Arun, one of the students in my lab section that I had talked to a few times, walked in and sat next to me. I thought that we could make a great team as I knew that he had experience in web development, so we quickly teamed up. Soon after the ceremony, we met another guy named Jarett who also knew a good deal about web development, so we all got together and decided that we would make a web application during the twenty-four hours of the hackathon.
+                                </p>
+                                <br/>
+
+                                <p>
+                                    The beginning was slow with us throwing ideas back and forth. We tried to find something fun, but at the same time difficult enough for us to be able to learn something. We had come up with a few good ideas, but we eventually settled on the idea of making a program inspired by <a href="https://bitstorm.org/gameoflife/" target="_blank">Conway’s Game of Life</a>. We wanted to stick to rules similar to the original, but with one major spin; we wanted to make the game board use hexagons instead of the usual squares.
+                                </p>
+                                <br/>
+
+                                <p>
+                                    After settling on an idea that we were all happy with, we immediately began researching and planning for how we were going to make everything actually work. Using hexagons provided a big technical problem for us because representing a grid of hexagons in code instead of a grid of squares isn’t very straightforward. Arun with some help from Jarett spearheaded the task and came up with a solution using some Javascript wizardry. I, on the other hand, took on the task of trying to represent everything happening in the code through a grid on the webpage. As it turns out, making a hexagonal grid graphically is also not so straightforward. After searching the web for some time, I ran across a bit of code that built a hexagonal grid through using a canvas element on a webpage. I had to heavily modify and add to the code to support all the different features that we wanted, but in the end it worked out better than I would have ever thought it would. After Arun had finished his code, Jarett mainly worked on writing game rules and all the logic and functions that would be needed to simulate the game correctly. We all worked a bit in each of the areas of the program.
+                                </p>
+                                <br/>
+
+                                <p>
+                                    As is normal with programming just about anything, we came across quite a few problems as we were developing certain features. Bugs would pop up from time to time, or someone would just get absolutely stuck on a certain problem. Problems were not met with anger or frustration, but rather, we just simply helped each other solve them no matter what they were. A few times the whole team had to go into full on debug mode just to smash some critical bugs, but when the solution was found, we all rejoiced and were filled with a new sense of determination to keep going. The greatest moment during the whole hackathon was when we finally got the program to work correctly for the first time. We had made the graph, wrote the code, and set the rules, but it still was not working properly. The wrong hexagons would be displayed on the graph, and the code at least did something but not what we expected it to do. After a good while of everyone troubleshooting and looking over the code, Jarett found that we were just sending the wrong parameters to the main code. The program suddenly worked as expected once Jarett had fixed the parameters. Our team was so excited to see it actually working! The moment just felt so magical to me for lack of better words.
+                                </p>
+                                <br/>
+
+                                <p>
+                                    In the end, I was incredibly proud of my team and the work that we had accomplished. Jarett and Arun turned out to be some of the best people that I have worked with, and I am incredibly glad to have worked with them. We took on a task that I was initially wondering if we could complete on time, but we finished the base program earlier than expected. I even got four hours of sleep that night, which may not sound like much, but comparatively to what others got, that was pretty good.  I was initially a bit apprehensive about joining a hackathon, but I loved it and would certainly be open to joining another in the future.
+                                </p>
+                                <br/>
+                            </div>
+
+                            <center><a href="https://arunarjunakani.github.io/HexagonalGameOfLife/" target="_blank"><img id="hexagonGif" src="photos/hexagon.gif"/></a></center>
+
+                            <div class="subtext">
+                                <p>
+                                    The project that we made was a web application based off of <a href="https://bitstorm.org/gameoflife/" target="_blank">Conway's Game of Life</a> that uses hexagons rather than squares. Feel free to check out <a href="https://github.com/arunarjunakani/HexagonalGameOfLife" target="_blank">the Github repository</a> or <a href="https://arunarjunakani.github.io/HexagonalGameOfLife/" target="_blank">the final product</a>. Mess around with different patterns and just see what happens!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="experiences-table-row">
                     <div class="experiences-tile" style="background: url(photos/pictophone.PNG) no-repeat center; background-size: cover;">
-                        <div class="tile-overlay">
+                        <div class="tile-overlay" onclick="expandContent('pictophone')">
                             <div class="tile-overlay-content">
                                 <h1>Pictophone</h1>
                             </div>
@@ -164,7 +282,7 @@
                     </div>
 
                     <div class="experiences-tile" style="background: url(photos/musicingames.PNG) no-repeat center; background-size: cover;">
-                        <div class="tile-overlay">
+                        <div class="tile-overlay" onclick="expandContent('musicingames')">
                             <div class="tile-overlay-content">
                                 <h1>Music in Games</h1>
                             </div>
@@ -172,105 +290,6 @@
                     </div>
                 </div>
             </div>
-
-			<br/>
-		
-			<div class="center">
-			
-				<div id="qualcomm">
-						
-					<h1 class="header">Qualcomm</h1>
-					
-					<img class="banner" src="photos/qualcomm.jpg"/>
-					
-					<div class="subtext">
-                        <p>
-                            In the summer of 2017, I had the amazing opportunity to take part in Qualcomm’s summer intern program. I gained a ton of experience through it and really learned a lot about what exactly computer science entails outside of school. While working at Qualcomm I had the opportunity to actually apply my knowledge in a work environment, and that really helped solidify my passion for computer science.
-                        </p>
-                        <br/>
-
-                        <p>
-                            Along the way I got to work with some great people and make some amazing friends. I worked directly with another intern, Kevin, on the same project, and I worked indirectly with five other interns who were also on the team. During the project Kevin and I mainly consulted with three other full time Qualcomm engineers to get a grasp on the existing code and what our project should exactly entail.
-                        </p>
-                        <br/>
-
-                        <p>
-                            The project that Kevin and I worked on mainly consisted of a front end web interface for a server that controlled SIM card profiles. The project was an internal tool, but the Qualcomm engineers made sure to stress just how important this project would be for them to be able to test and debug various issues that come up. The front end was programmed using HTML, CSS, and Javascript, and we utilized Bootstrap for a lot of the layout and design work. The backend consisted of a lot of pre-existing Java code, but we had to add a lot to it to provide the various functions that we wanted to be run from the interface. By the end I was incredibly proud of what we put together and what we had accomplished in three months.
-                        </p>
-                        <br/>
-
-                        <p>
-                            My experience as an intern at Qualcomm is one that I will never forget. I am incredibly grateful for the opportunity Qualcomm gave me to work with them, and I look forward to seeing what possibilities await me in the future!
-                        </p>
-						<br/>
-					</div>
-				</div>
-					
-			</div>
-			<br/>
-			
-			<div id="cloud">
-			
-				<div id="cloudbuffer">
-					<img src="photos/cloud2.svg"/>
-				</div>
-				
-				<div id="HWContent">
-					<center><a href="http://helloworld.purduehackers.com/" target="_blank"><img id="HWLogo" src="photos/HWLogo.png"/></a></center>
-					<br/>
-					<br/>
-				
-					<div class="center">
-						<h1 class="header">Hello World</h1>
-						
-						<img class="banner" src="photos/helloworld.jpg" />
-						
-						<h1 class="subheader">The Story</h1>
-						
-						<div class="subtext">
-							<p>
-								Before coming to Purdue the concept of a hackathon was a daunting one to me, but little did I know that attending one would be one of the best programming experiences I would ever have. I mean, I had worked with other people before and was comfortable with what I knew, but coming up with an idea and successfully hashing it out in a little amount of time with people that I was unfamiliar with sounded a bit crazy to me. Nevertheless I was determined to sign up and make the most of this new experience. 
-							</p>
-							<br/>
-							
-							<p>
-								Once I had arrived to the opening ceremony, I sat around for a while surveying the room and looking for anyone that looked even vaguely familiar that I could team up with. Before long Arun, one of the students in my lab section that I had talked to a few times, walked in and sat next to me. I thought that we could make a great team as I knew that he had experience in web development, so we quickly teamed up. Soon after the ceremony, we met another guy named Jarett who also knew a good deal about web development, so we all got together and decided that we would make a web application during the twenty-four hours of the hackathon.
-							</p>
-							<br/>
-							
-							<p>
-								The beginning was slow with us throwing ideas back and forth. We tried to find something fun, but at the same time difficult enough for us to be able to learn something. We had come up with a few good ideas, but we eventually settled on the idea of making a program inspired by <a href="https://bitstorm.org/gameoflife/" target="_blank">Conway’s Game of Life</a>. We wanted to stick to rules similar to the original, but with one major spin; we wanted to make the game board use hexagons instead of the usual squares.
-							</p>
-							<br/>
-							
-							<p>
-								After settling on an idea that we were all happy with, we immediately began researching and planning for how we were going to make everything actually work. Using hexagons provided a big technical problem for us because representing a grid of hexagons in code instead of a grid of squares isn’t very straightforward. Arun with some help from Jarett spearheaded the task and came up with a solution using some Javascript wizardry. I, on the other hand, took on the task of trying to represent everything happening in the code through a grid on the webpage. As it turns out, making a hexagonal grid graphically is also not so straightforward. After searching the web for some time, I ran across a bit of code that built a hexagonal grid through using a canvas element on a webpage. I had to heavily modify and add to the code to support all the different features that we wanted, but in the end it worked out better than I would have ever thought it would. After Arun had finished his code, Jarett mainly worked on writing game rules and all the logic and functions that would be needed to simulate the game correctly. We all worked a bit in each of the areas of the program.
-							</p>
-							<br/>
-							
-							<p>
-								As is normal with programming just about anything, we came across quite a few problems as we were developing certain features. Bugs would pop up from time to time, or someone would just get absolutely stuck on a certain problem. Problems were not met with anger or frustration, but rather, we just simply helped each other solve them no matter what they were. A few times the whole team had to go into full on debug mode just to smash some critical bugs, but when the solution was found, we all rejoiced and were filled with a new sense of determination to keep going. The greatest moment during the whole hackathon was when we finally got the program to work correctly for the first time. We had made the graph, wrote the code, and set the rules, but it still was not working properly. The wrong hexagons would be displayed on the graph, and the code at least did something but not what we expected it to do. After a good while of everyone troubleshooting and looking over the code, Jarett found that we were just sending the wrong parameters to the main code. The program suddenly worked as expected once Jarett had fixed the parameters. Our team was so excited to see it actually working! The moment just felt so magical to me for lack of better words.
-							</p>
-							<br/>
-							
-							<p>
-								In the end, I was incredibly proud of my team and the work that we had accomplished. Jarett and Arun turned out to be some of the best people that I have worked with, and I am incredibly glad to have worked with them. We took on a task that I was initially wondering if we could complete on time, but we finished the base program earlier than expected. I even got four hours of sleep that night, which may not sound like much, but comparatively to what others got, that was pretty good.  I was initially a bit apprehensive about joining a hackathon, but I loved it and would certainly be open to joining another in the future.
-							</p>
-							<br/>
-						</div>
-						
-						<h1 class="subheader">The Project</h1>
-						
-						<center><a href="https://arunarjunakani.github.io/HexagonalGameOfLife/" target="_blank"><img id="hexagonGif" src="photos/hexagon.gif"/></a></center>
-						
-						<div class="subtext">
-							<p>
-								The project that we made was a web application based off of <a href="https://bitstorm.org/gameoflife/" target="_blank">Conway's Game of Life</a> that uses hexagons rather than squares. Feel free to check out <a href="https://github.com/arunarjunakani/HexagonalGameOfLife" target="_blank">the Github repository</a> or <a href="https://arunarjunakani.github.io/HexagonalGameOfLife/" target="_blank">the final product</a>. Mess around with different patterns and just see what happens!
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
 		
 		<div id="contact" class="content">
