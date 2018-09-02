@@ -3,6 +3,15 @@
  */
 
 let expandedExperience;
+let isInFocus = true;
+
+window.onblur = () => {
+  isInFocus = false;
+};
+
+window.onfocus = () => {
+  isInFocus = true;
+};
 
 $(document).ready(function(){
 	// removes javascript notice
@@ -91,6 +100,9 @@ function startDescriptionSwap () {
     typeText("landing-description", descriptions[index] + "_");
 
     setInterval(() => {
+        if (!isInFocus)
+            return;
+
         deleteText("landing-description", descriptions[index].length, () => {
             index = (index + 1) % descriptions.length;
 

@@ -278,18 +278,18 @@ p {
 	visibility: hidden;
 }
 
-#header{
+#header {
 	max-width:1000px;
 	height:100%;
 	margin:auto;
 	position:relative;
 }
 
-#header *{
+#header * {
 	display:inline-block;
 }
 
-#header h1{
+#header h1 {
 	position: absolute;
     color: black;
     text-shadow: none;
@@ -300,12 +300,12 @@ p {
 	width: 500px;
 }
 
-#HWContent{
+#HWContent {
 	background:rgba(82, 191, 168, .9);
 	padding-bottom:50px;
 }
 
-#HWContent a{
+#HWContent a {
 	color:#ef5725;
 }
 
