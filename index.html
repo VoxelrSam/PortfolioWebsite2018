@@ -52,7 +52,7 @@
                 <div class="text">
 
                     <p>
-                        My name is Samuel Ingram, or Sam as most people call me, and I am a junior at Purdue University working towards a bachelors of science in computer science honors. I absolutely love technology and music. Both fascinate me, and I always enjoy learning more about each subject.
+                        My name is Samuel Ingram, or Sam as most people call me, and I am a Junior at Purdue University working towards a Bachelors of Science in Computer Science Honors. I absolutely love technology and music. Both fascinate me, and I always enjoy learning more about each subject.
                     </p>
                     <br/>
 
@@ -275,19 +275,23 @@
 
                 <div class="experiences-table-row">
                     <div class="experiences-tile" style="background: url(photos/pictophone.PNG) no-repeat center; background-size: cover;">
-                        <div class="tile-overlay" onclick="expandContent('pictophone')">
-                            <div class="tile-overlay-content">
-                                <h1>Pictophone</h1>
+                        <a href="https://github.com/VoxelrSam/Pictophone" target="_blank" style="text-decoration: none;">
+                            <div class="tile-overlay">
+                                <div class="tile-overlay-content">
+                                    <h1>Pictophone</h1>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                     <div class="experiences-tile" style="background: url(photos/musicingames.PNG) no-repeat center; background-size: cover;">
-                        <div class="tile-overlay" onclick="expandContent('musicingames')">
-                            <div class="tile-overlay-content">
-                                <h1>Music in Games</h1>
+                        <a href="http://samingram.me/gamemusic/" target="_blank" style="text-decoration: none;">
+                            <div class="tile-overlay" onclick="expandContent('musicingames')">
+                                <div class="tile-overlay-content">
+                                    <h1>Music in Games</h1>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
 
@@ -325,27 +329,15 @@
             </div>
 		</div>
 		
-		<div id="contact" class="content">
-			<div class="center">
-			
-				<h1 class="header">Contact Me!</h1>
-			
-				<div class="text">
-					<p>Have any questions, comments, concerns, or just constructive criticism? Send an email to</p>
-					<center><a style=text-decoration:none; href="mailto:sam@samingram.me"><h2 class="email">sam@samingram.me</h2></a></center>
-					<p>or direct school related emails to</p>
-					<center><a style=text-decoration:none; href="mailto:ingram23@purdue.edu"><h2 class="email">ingram23@purdue.edu</h2></a></center>
-					<p>I'll be sure to get back with you quickly!</p>
-					<br/>
-					
-					<p>Considering me for a job or internship? <a target="_blank" href="files/Samuel Ingram Resume.pdf">Download my resume here</a>. I would love to hear back!</p>
-					<br/>
-					
-					<p>Also, feel free to check out my <a target="_blank" href="https://github.com/VoxelrSam">Github</a> or my <a href="https://www.linkedin.com/in/samuel-ingram-4571a0127" target="_blank">LinkedIn Profile</a>.</p>
-				</div>
-				<br/>
-			
-			</div>
+		<div id="contact" class="content" style="display: block; position: relative;">
+            <div class="fixed-frame" style="height: 100%; width: 40%; position: absolute; right: 0px; display: flex; justify-content: center; flex-direction: column;">
+                <ul id="contact-list">
+                    <li><h1><a href="mailto:sam@samingram.me">Email</a></h1></li>
+                    <li><h1><a href="files/Samuel%20Ingram%20Resume.pdf" target="_blank">Resume</a></h1></li>
+                    <li><h1><a href="https://github.com/VoxelrSam" target="_blank">Github</a></h1></li>
+                    <li><h1><a href="https://www.linkedin.com/in/samuel-ingram-4571a0127" target="_blank">LinkedIn</a></h1></li>
+                </ul>
+            </div>
 		</div>
 	</div>
 </body>

@@ -24,6 +24,24 @@ $(document).ready(function(){
 function setCss(){
 	// margin left (used for horizontal alignment) is calculated based on width of the element
 	$('#inner-loading').css('margin-left',"-" + $('#inner-loading').width() / 2 + "px");
+
+	// If the browser is being viewed through a screen similar to a phone
+	if (window.innerHeight > window.innerWidth) {
+	    $("#landing-introduction").css({
+            "top": "20%",
+            "margin": "auto",
+            "left": 0,
+            "right": 0,
+            "text-align": "center"
+        });
+
+        $("#landing-description").css({
+            "margin": "auto",
+            "left": 0,
+            "right": 0,
+            "text-align": "center"
+        });
+    }
 }
 
 // Removes the loading screen when the website has loaded and starts animations
@@ -115,14 +133,38 @@ function startDescriptionSwap () {
 
 function expandContent (name) {
     const element = document.getElementById("experiences-" + name);
+    let didCloseContent = false;
 
-    if (expandedExperience)
+    if (expandedExperience) {
         document.getElementById("experiences-" + expandedExperience).style.height = "0px";
+        didCloseContent = true;
+    }
 
     if (expandedExperience !== name) {
         element.style.height = element.scrollHeight + "px";
         expandedExperience = name;
+
+        if (name === "boilermake")
+            name = "salesforce";
+        else if (name === "helloworld")
+            name = "qualcomm";
+        else if (name === "musicingames")
+            name = "pictophone";
+
+        if (!didCloseContent) {
+            navigateTo("#experiences-" + name);
+        } else {
+            setTimeout(() => {
+                navigateTo("#experiences-" + name);
+            }, 500);
+        }
     } else {
         expandedExperience = undefined;
     }
+}
+
+function navigateTo(element){
+    $('html, body').animate({
+        scrollTop: $(element).offset().top - 60
+    }, 400);
 }
