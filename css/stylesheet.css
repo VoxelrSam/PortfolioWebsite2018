@@ -49,6 +49,7 @@ a .circle-logo:hover{
 
 .content {
     display: table;
+    table-layout: fixed;
 	width: 100%;
     font-size: 0;
     overflow: hidden;
@@ -56,24 +57,10 @@ a .circle-logo:hover{
 
 .left-content, .right-content {
     display: table-cell;
-    height: 100%;
-    width: 50%;
     padding: 25px;
 }
 
-.email{
-	color:lightgrey;
-	font-weight: normal;
-	padding:5px;
-	transition:-webkit-transform .5s, color .5s;
-}
-
-.email:hover{
-	transform:scale(1.05);
-	color:white;
-}
-
-.header{ /* .content header elements */
+.header { /* .content header elements */
 	text-align: center;
 	font-weight: 200;
     font-size: 45px;
@@ -91,7 +78,7 @@ a .circle-logo:hover{
 	text-align:left;
 }
 
-.subtext{ 
+.subtext {
 	max-width: 800px;
 	margin: auto;
 	margin-top: 25px;
