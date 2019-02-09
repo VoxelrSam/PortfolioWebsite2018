@@ -14,9 +14,6 @@ window.onfocus = () => {
 };
 
 $(document).ready(function(){
-	// removes javascript notice
-	$('#javascriptNotice').css('display','none');
-	
 	setCss();
 });
 
@@ -110,7 +107,8 @@ function startDescriptionSwap () {
         "Developer",
         "Musician",
         "Creator",
-        "Computer Scientist"
+        "Computer Scientist",
+        "Boilermaker"
     ];
 
     let index = 0;
@@ -144,12 +142,10 @@ function expandContent (name) {
         element.style.height = element.scrollHeight + "px";
         expandedExperience = name;
 
-        if (name === "boilermake")
+        if (name === "boilermake6")
             name = "salesforce";
-        else if (name === "helloworld")
+        else if (name === "boilermake")
             name = "qualcomm";
-        else if (name === "musicingames")
-            name = "pictophone";
 
         if (!didCloseContent) {
             navigateTo("#experiences-" + name);
