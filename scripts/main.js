@@ -142,10 +142,12 @@ function expandContent (name) {
         element.style.height = element.scrollHeight + "px";
         expandedExperience = name;
 
-        if (name === "boilermake6")
-            name = "salesforce";
-        else if (name === "boilermake")
-            name = "qualcomm";
+        if (name === "salesforce")
+            name = "salesforce2";
+        else if (name === "qualcomm")
+          name = "boilermake6";
+        else if (name === "helloworld")
+            name = "boilermake";
 
         if (!didCloseContent) {
             navigateTo("#experiences-" + name);

@@ -2,6 +2,8 @@
 <!--
     This page has been designed by Samuel Ingram.
 
+    Some day I may refactor this into a better organized React page, but this is how it is for now
+
     Check out the Github repo here: https://github.com/VoxelrSam/PortfolioWebsite2018
  -->
 
@@ -90,18 +92,49 @@
 
             <div id="experiences-table">
                 <div class="experiences-table-row">
-                    <div class="experiences-tile" style="background: url(photos/salesforce.jpg) no-repeat center; background-size: cover;">
-                        <div class="tile-overlay" onclick="expandContent('salesforce')">
+                    <div class="experiences-tile" style="background: url(photos/salesforce2.jpg) no-repeat center; background-size: cover;">
+                        <div class="tile-overlay" onclick="expandContent('salesforce2')">
                             <div class="tile-overlay-content">
-                                <h1>Salesforce</h1>
+                                <h1>Salesforce San Francisco</h1>
                             </div>
                         </div>
                     </div>
 
-                    <div class="experiences-tile" style="background: url(photos/boilermake6.jpg) no-repeat center; background-size: cover;">
-                        <div class="tile-overlay" onclick="expandContent('boilermake6')">
+                    <div class="experiences-tile" style="background: url(photos/salesforce.jpg) no-repeat center; background-size: cover;">
+                        <div class="tile-overlay" onclick="expandContent('salesforce')">
                             <div class="tile-overlay-content">
-                                <h1>BoilerMake VI</h1>
+                                <h1>Salesforce Indianapolis</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="experiences-salesforce2" class="experiences-content">
+                    <div class="center">
+
+                        <div id="salesforce2">
+
+                            <h1 class="header">Salesforce San Francisco</h1>
+
+                            <div class="subtext">
+                                <p>
+                                    To many, the Bay Area is regarded as the epicenter of Computer Science in the modern day. Being in the industry, I knew that I had to get a taste of the place and the culture in the best way I knew how - through an internship. Having been at Salesforce Indianapolis the year prior, pursuing a return offer for San Francisco was the most straightforward way of realizing such a dream. Thankfully, Salesforce was more than happy to accomodate, and I gladly took the offer to join them for my final internship in the summer of 2019.
+                                </p>
+                                <br/>
+
+                                <p>
+                                    While at Salesforce, I joined a team on the Platform Cloud called the “PIES” team. This team owned a number of features on the Salesforce Core, but they were working on creating AWS private connection features while I was there. My project, however, was built on top of a feature that they owned call External Data Sources. In short, External Data Sources are various sources outside of Salesforce that customers can hook into Salesforce such that they can still use the Salesforce platform with this data without having to formally import it all. The code that my team had wrote handles all these hooks and connections to these sources. My project, the OData Tracer, was built on top of this as a tool for customers to investigate issues with their data sources. Some customers would file cases about the External Data Source feature not working properly, but upon further investigation, the problem was with the data source itself and not with any code that Salesforce wrote. The OData Tracer lets customers send various requests to these sources to see the responses and compare them again expected outputs. Once the Tracer is released, it should hopefully cut down on customer cases and make investigations much easier. The project ended up turning out very nice, and I was very happy to have a completed product that was ready to ship along with the rest of Salesforce’s 222 release.
+                                </p>
+                                <br/>
+
+                                <p>
+                                    This internship proved to be quite different than others due to the nature of working with Salesforce Core. The main part of the Salesforce code base is a large monolithic chunk of Java code that has many proprietary ways of doing things that cannot be Googled since Salesforce is the only company that works with it. This meant that many solutions required the expertise of those who were more experienced than me. As a whole, I felt that I wrote less code over the span of this internship, but I felt that I ultimately did more work than any of my others. The nature of working with such a code base meant that I had to initiate many conversations over implementation approaches and seek proper approval for a number of different changes. For instance, setting up the proper permissions for this project ended up taking much longer than expected since, on the surface, the permissions were just checkboxes for specific profiles, but underneath, it was much more complex since we had to plan out how to initialize this permission for the release and which profiles even had access in the first place. Coming up with a solution took multiple days with conversations inside and outside of the team with us even needing VP approval for a database script that we had wrote. In the end though, we came up with a great solution that everyone was happy with, and even though hardly any code had to be changed/written, it still took a significant effort from me and a few others on the team.
+                                </p>
+                                <br/>
+
+                                <p>
+                                    In the end, I could not be more happy with how my last internship turned out. Experiencing the area and culture of San Francisco was a blast, and the lessons I learned from my project will be incredibly valuable for me in my next steps as I go into full time employment. I am excited to see what the future holds, and I look forward to experiencing the life of a full time employee.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -112,7 +145,7 @@
 
                         <div id="salesforce">
 
-                            <h1 class="header">Salesforce</h1>
+                            <h1 class="header">Salesforce Indianapolis</h1>
 
                             <div class="subtext">
                                 <p>
@@ -133,6 +166,24 @@
                                 <p>
                                     All in all, I was very happy with my experience at Salesforce, and I will always hold the other companies that I apply to at a higher standard because of it. Being able to integrate myself with a full time team and kickstart a brand new application really gave me a hugely valuable experience. It taught me what it is like to truly care for the code that I write and to truly care for the people that I work with.
                                 </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experiences-table-row">
+                    <div class="experiences-tile" style="background: url(photos/boilermake6.jpg) no-repeat center; background-size: cover;">
+                        <div class="tile-overlay" onclick="expandContent('boilermake6')">
+                            <div class="tile-overlay-content">
+                                <h1>BoilerMake VI</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experiences-tile" style="background: url(photos/qualcomm.jpg) no-repeat center; background-size: cover;">
+                        <div class="tile-overlay" onclick="expandContent('qualcomm')">
+                            <div class="tile-overlay-content">
+                                <h1>Qualcomm</h1>
                             </div>
                         </div>
                     </div>
@@ -181,24 +232,6 @@
                     </div>
                 </div>
 
-                <div class="experiences-table-row">
-                    <div class="experiences-tile" style="background: url(photos/qualcomm.jpg) no-repeat center; background-size: cover;">
-                        <div class="tile-overlay" onclick="expandContent('qualcomm')">
-                            <div class="tile-overlay-content">
-                                <h1>Qualcomm</h1>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="experiences-tile" style="background: url(photos/boilermake.jpg) no-repeat center; background-size: cover;">
-                        <div class="tile-overlay" onclick="expandContent('boilermake')">
-                            <div class="tile-overlay-content">
-                                <h1>BoilerMake V</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <div id="experiences-qualcomm" class="experiences-content">
                     <div class="center">
 
@@ -228,6 +261,24 @@
                             </div>
                         </div>
 
+                    </div>
+                </div>
+
+                <div class="experiences-table-row">
+                    <div class="experiences-tile" style="background: url(photos/boilermake.jpg) no-repeat center; background-size: cover;">
+                        <div class="tile-overlay" onclick="expandContent('boilermake')">
+                            <div class="tile-overlay-content">
+                                <h1>BoilerMake V</h1>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="experiences-tile" style="background: url(photos/helloworld.jpg) no-repeat center; background-size: cover;">
+                        <div class="tile-overlay" onclick="expandContent('helloworld')">
+                            <div class="tile-overlay-content">
+                                <h1>Hello World</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -262,26 +313,6 @@
                                 </p>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="experiences-table-row">
-                    <div class="experiences-tile" style="background: url(photos/helloworld.jpg) no-repeat center; background-size: cover;">
-                        <div class="tile-overlay" onclick="expandContent('helloworld')">
-                            <div class="tile-overlay-content">
-                                <h1>Hello World</h1>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="experiences-tile" style="background: url(photos/SwoleMate.PNG) no-repeat center; background-size: cover;">
-                        <a href="https://github.com/jadenz98/SwoleMate" target="_blank" style="text-decoration: none;">
-                            <div class="tile-overlay">
-                                <div class="tile-overlay-content">
-                                    <h1>SwoleMate</h1>
-                                </div>
-                            </div>
-                        </a>
                     </div>
                 </div>
 
@@ -333,6 +364,28 @@
                                 </p>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="experiences-table-row">
+                    <div class="experiences-tile" style="background: url(photos/nightin.jpg) no-repeat center; background-size: cover;">
+                        <a href="https://github.com/AdamKogut/RecipeCookbook" target="_blank" style="text-decoration: none;">
+                            <div class="tile-overlay">
+                                <div class="tile-overlay-content">
+                                    <h1>Night-In</h1>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="experiences-tile" style="background: url(photos/SwoleMate.PNG) no-repeat center; background-size: cover;">
+                        <a href="https://github.com/jadenz98/SwoleMate" target="_blank" style="text-decoration: none;">
+                            <div class="tile-overlay">
+                                <div class="tile-overlay-content">
+                                    <h1>SwoleMate</h1>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
 
