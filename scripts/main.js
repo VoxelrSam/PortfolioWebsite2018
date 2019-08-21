@@ -1,5 +1,5 @@
 /**
- *
+ * Various scripts used to drive interactivity
  */
 
 let expandedExperience;
